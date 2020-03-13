@@ -12,6 +12,9 @@ jobs:
       image: crystallang/crystal:latest-alpine
     steps:
     - uses: actions/checkout@v2
+    - name: Version Update
+      run: |
+        sed -i -e "s/VERSION=.*/VERSION=${GITHUB_REF#refs/tags/}/" run.sh
     - name: Upload
       uses: actions/upload-release-asset@v1.0.1
       env:
