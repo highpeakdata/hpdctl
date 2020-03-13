@@ -15,7 +15,7 @@
 
 set -e
 
-VERSION="1.0"
+VERSION="0.0.248"
 IMAGE="edgefs/hpdctl:$VERSION"
 
 
