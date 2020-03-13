@@ -1,2 +1,3 @@
 # hpdctl
-HPDCTL tool
+HPDCTL tool wrapper.
+
